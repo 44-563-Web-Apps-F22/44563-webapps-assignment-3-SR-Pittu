@@ -63,16 +63,17 @@ These places have nature beauty in their own ways and decribes the local culture
     <blockquote cite= "https://stackoverflow.com/questions/73723158/my-stored-procedure-with-php-and-postman-sql-server-saves-me-null">
          My stored procedure with PHP and Postman SQL Server saves me NULL </blockquote >
     <a href="https://stackoverflow.com/questions/73723158/my-stored-procedure-with-php-and-postman-sql-server-saves-me-null">Question Link</a>
-    <pre> 
-        <code>
-<?php
-function create_slug($string){
-$slug=preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
-return $slug;
-}
-echo create_slug('does this thing work or not');
-//returns 'does-this-thing-work-or-not'
-?></code>
+
+
+<pre> 
+<code>
+function concatenate($elements, $delimiter = ', ', $finalDelimiter = ' and ') {
+$lastElement = array_pop($elements);
+return join($delimiter, $elements) . $finalDelimiter . $lastElement;
+ }
+ $array = array('John', 'Mary', 'Ishmal');
+echo concatenate($array);
+</code>
 </pre>
 </body>
 </html>
