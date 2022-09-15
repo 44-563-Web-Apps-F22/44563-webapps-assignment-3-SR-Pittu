@@ -56,5 +56,23 @@ These places have nature beauty in their own ways and decribes the local culture
             <td> 3 days </td>
         </tr>
     </table>
-    </body>
+
+    <hr>
+
+    <h3> Code Snippet </h3>
+    <blockquote cite= "https://stackoverflow.com/questions/73723158/my-stored-procedure-with-php-and-postman-sql-server-saves-me-null">
+         My stored procedure with PHP and Postman SQL Server saves me NULL </blockquote >
+    <a href="https://stackoverflow.com/questions/73723158/my-stored-procedure-with-php-and-postman-sql-server-saves-me-null">Question Link</a>
+    <pre> 
+        <code>
+<?php
+function create_slug($string){
+$slug=preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
+return $slug;
+}
+echo create_slug('does this thing work or not');
+//returns 'does-this-thing-work-or-not'
+?></code>
+</pre>
+</body>
 </html>
